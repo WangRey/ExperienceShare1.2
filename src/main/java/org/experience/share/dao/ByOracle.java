@@ -1,6 +1,6 @@
 package org.experience.share.dao;
 
-public class ByOracle {
+public class ByOracle implements Database{
 
     public void findUserInfoInDB() {
 

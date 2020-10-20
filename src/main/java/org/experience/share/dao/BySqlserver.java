@@ -1,6 +1,6 @@
 package org.experience.share.dao;
 
-public class BySqlserver {
+public class BySqlserver implements Database{
 
     public void findUserInfoInDB() {
 
