@@ -3,11 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="byOracle" class="org.experience.share.dao.ByOracle"/>
-    <bean id="bySqlserver" class="org.experience.share.dao.BySqlserver"/>
+<!--    <bean id="database" class="org.experience.share.dao.ByOracle"/>-->
+    <bean id="database" class="org.experience.share.dao.BySqlserver"/>
 
-    <!--    此时有报错，IOC容器中存在两个可以匹配的Bean对象，IOC无法明确装配哪个类-->
-    <bean id="userService" class="org.experience.share.service.UserService" autowire="byType">
+    <bean id="userService" class="org.experience.share.service.UserService" autowire="byName">
 
     </bean>
 
