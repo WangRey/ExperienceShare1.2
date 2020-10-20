@@ -4,6 +4,8 @@ import org.experience.share.dao.BySqlserver;
 import org.experience.share.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @SpringBootTest
 class ShareApplicationTests {
@@ -11,7 +13,9 @@ class ShareApplicationTests {
     @Test
     void contextLoads() {
 
-
+        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        UserService userServiceImp = (UserService)ac.getBean("userService");
+        userServiceImp.getUserInfo();
 
     }
 
