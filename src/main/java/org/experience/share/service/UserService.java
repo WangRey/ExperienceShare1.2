@@ -6,16 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 @Service
 public class UserService {
 
-    @Autowired
-    @Qualifier(value = "bySqlserver")
-    Database database;
+    @Resource
+    Database bySqlserver;
 
     public void getUserInfo(){
 
-        database.findUserInfoInDB();
+        bySqlserver.findUserInfoInDB();
 
     }
 
