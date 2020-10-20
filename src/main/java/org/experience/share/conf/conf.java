@@ -6,7 +6,7 @@ import org.experience.share.dao.Database;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-//@Configuration
+@Configuration
 public class conf {
 
     @Bean
@@ -15,7 +15,7 @@ public class conf {
         return new BySqlserver();
 
     }
-    @Bean
+//    @Bean
     public Database byOracle(){
 
         return new ByOracle();

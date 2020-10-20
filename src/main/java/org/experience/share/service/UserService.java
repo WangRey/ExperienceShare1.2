@@ -11,12 +11,12 @@ import javax.annotation.Resource;
 @Service
 public class UserService {
 
-    @Resource
-    Database bySqlserver;
+    @Autowired
+    Database database;
 
     public void getUserInfo(){
 
-        bySqlserver.findUserInfoInDB();
+        database.findUserInfoInDB();
 
     }
 

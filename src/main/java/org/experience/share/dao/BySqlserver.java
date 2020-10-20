@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 //@Component
-@Repository
+//@Repository
 public class BySqlserver implements Database{
 
     public void findUserInfoInDB() {
