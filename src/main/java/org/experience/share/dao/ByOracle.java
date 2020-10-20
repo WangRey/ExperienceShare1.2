@@ -1,5 +1,8 @@
 package org.experience.share.dao;
 
+import org.springframework.stereotype.Repository;
+
+//@Repository
 public class ByOracle implements Database{
 
     public void findUserInfoInDB() {
