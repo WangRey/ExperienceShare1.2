@@ -1,6 +1,11 @@
 package org.experience.share.dao;
 
-public class BySqlserver {
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
+//@Component
+@Repository
+public class BySqlserver implements Database{
 
     public void findUserInfoInDB() {
 
