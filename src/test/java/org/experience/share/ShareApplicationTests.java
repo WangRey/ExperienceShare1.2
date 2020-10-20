@@ -11,7 +11,9 @@ class ShareApplicationTests {
     @Test
     void contextLoads() {
 
+        UserService userService = new UserService();
 
+        userService.getUserInfo();
 
     }
 
